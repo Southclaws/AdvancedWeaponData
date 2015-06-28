@@ -184,7 +184,7 @@ stock Float:GetWeaponRateOfFire(weaponid)
 stock Float:GetWeaponRangeCap(weaponid)
 {
 	if(!(0 <= weaponid < MAX_WEAPONS))
-		return 0.0;
+		return 0;
 
 	return WeaponData[weaponid][weapon_rangeCap];
 }
